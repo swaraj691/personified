@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Resources</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #2c3e50;
+            flex: 1;
+            margin: 0;
+        }
+        .header-image {
+            width: 250px;
+            margin-left: 20px;
+            flex-shrink: 0;
+        }
+        .header-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .resources {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            clear: both;
+        }
+        .resource-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: white;
+            border-radius: 6px;
+            border-left: 4px solid #3498db;
+        }
+        .resource-item:last-child {
+            margin-bottom: 0;
+        }
+        .resource-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #3498db;
+            margin-bottom: 10px;
+        }
+        .resource-description {
+            color: #555;
+            margin-bottom: 10px;
+        }
+        .resource-link {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .resource-link:hover {
+            background-color: #2980b9;
+        }
+        .excel-link {
+            background-color: #27ae60;
+        }
+        .excel-link:hover {
+            background-color: #219653;
+        }
+        .powerpoint-link {
+            background-color: #e74c3c;
+        }
+        .powerpoint-link:hover {
+            background-color: #c0392b;
+        }
+        @media (max-width: 600px) {
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .header-image {
+                margin: 20px 0 0 0;
+                width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header-container">
+        <h1>Document Resources</h1>
+        <div class="header-image">
+            <img src="portrait-image.jpg" alt="">
+        </div>
+    </div>
+    
+    <div class="resources">
+        <div class="resource-item">
+            <div class="resource-title">Raw Data Excel around various initiative </div>
+            <div class="resource-description">
+                This Excel Weekly updated Status raw data.
+            </div>
+            <a href="raw-data.xlsx" class="resource-link excel-link">Open Excel File</a>
+        </div>
+        
+        <div class="resource-item">
+            <div class="resource-title">Powerpoint presentation </div>
+            <div class="resource-description">
+                This PowerPoint presentation provides an overview of Iniative, action and Status.
+            </div>
+            <a href="pune-storage.pptx" class="resource-link powerpoint-link">Open Team Initiative Status</a>
+        </div>
+        
+        <div class="resource-item">
+            <div class="resource-title">MBR Presentation</div>
+            <div class="resource-description">
+                Monthly Business Review presentation with key metrics and performance indicators.
+            </div>
+            <a href="mbr-presentation.pptx" class="resource-link powerpoint-link">Open MBR Presentation</a>
+        </div>
+        
+        <div class="resource-item">
+            <div class="resource-title">QBR Presentation</div>
+            <div class="resource-description">
+                Quarterly Business Review detailing strategic initiatives and quarterly results.
+            </div>
+            <a href="qbr-presentation.pptx" class="resource-link powerpoint-link">Open QBR Presentation</a>
+        </div>
+        
+        <div class="resource-item">
+            <div class="resource-title">Year to Date Report</div>
+            <div class="resource-description">
+                Comprehensive year-to-date analysis of business performance and key achievements.
+            </div>
+            <a href="ytd-report.pptx" class="resource-link powerpoint-link">Open Year to Date Report</a>
+        </div>
+    </div>
+</body>
+</html>
